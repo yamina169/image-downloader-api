@@ -5,7 +5,7 @@ import json
 api_key = "your api key "
 per_page = 200  # Number of images per page
 page = 1  # Initial page
-queries = {"cars": 500, "dogs": 500, "flowers": 500}
+queries = {"cars": 500, "dogs": 500, "flowers": 500}#nb IMG/query
 
 for query, count in queries.items():
     if not os.path.exists(query):
@@ -27,7 +27,7 @@ for query, count in queries.items():
             with open(os.path.join(query, str(name) + '.jpg'), 'wb') as f:
                 f.write(r.content)
 
-            photos.append({"id": name, "query": query, "name": image['tags'], "url": img_url})
+            photos.append({"id": name, "query": query,  "url": img_url})
 
             total_images += 1
 
@@ -36,6 +36,6 @@ for query, count in queries.items():
         page += 1
 
     with open(os.path.join(query, 'photos.json'), 'w') as f:
-        json.dump(photos, f, indent=4)
+        json.dump(photos, f, indent=4)#save id name url imgs in file json
 
 
