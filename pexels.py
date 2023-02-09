@@ -45,7 +45,7 @@ for query, count in queries.items():
                 break
         page += 1
 
-    # Save the metadata for the downloaded images
+    # Save the data for the downloaded images
     with open(os.path.join(query, 'photos.json'), 'w') as f:
         json.dump(photos, f, indent=4)
 
