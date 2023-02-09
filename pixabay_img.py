@@ -1,11 +1,11 @@
-
+# www.Pixabay.com est un site web de partage d'images diffusées en licence libre 
 import requests
 import os
 import json
-api_key = "33487233-681caf9033a0f03dc5bfc5f2a"
+api_key = "your api key "
 per_page = 200  # Number of images per page
 page = 1  # Initial page
-queries = {"cars": 3, "dogs": 3, "flowers": 3}
+queries = {"cars": 500, "dogs": 500, "flowers": 500}
 
 for query, count in queries.items():
     if not os.path.exists(query):
