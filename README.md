@@ -1,7 +1,6 @@
 # Image Downloader API
 
-This project provides Python scripts to download images from free-license image-sharing websites, Pexels and Pixabay. The downloaded images are categorized based on user-defined queries.
-
+This repository provides Python scripts to automatically download a large number of images from free-license image-sharing websites. The downloaded images are categorized based on user-defined queries, making it suitable for various applications, such as training machine learning models.
 ## Getting Started
 
 ### Prerequisites
